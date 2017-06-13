@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.io.com.dingotrack.ui.login.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_profile_image"
+                        android:layout_height="@dimen/size_profile_image"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/defaultpic" />
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/ripple_button"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_cam" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/appAlphaBlack">
+
+                        <EditText
+                            android:id="@+id/fNameEditText"
+                            style="@style/DingoEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_fname"
+                            android:inputType="textPersonName" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/appAlphaBlack">
+
+                        <EditText
+                            android:id="@+id/lNameEditText"
+                            style="@style/DingoEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_lname"
+                            android:inputType="textPersonName" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/appAlphaBlack">
+
+                    <EditText
+                        android:id="@+id/emailEditText"
+                        style="@style/DingoEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_email"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/appAlphaBlack">
+
+                    <EditText
+                        android:id="@+id/bussNameEditText"
+                        style="@style/DingoEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_businessname"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/appAlphaBlack">
+
+                    <EditText
+                        android:id="@+id/tmcNumberEditText"
+                        style="@style/DingoEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_tmc_number"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/appAlphaBlack">
+
+                    <EditText
+                        android:id="@+id/tdotNumberEditText"
+                        style="@style/DingoEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_tdot_number"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/appAlphaBlack">
+
+                    <EditText
+                        android:id="@+id/pocNumberEditText"
+                        style="@style/DingoEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_tpoc"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/appAlphaBlack">
+
+                    <EditText
+                        android:id="@+id/passwordEditText"
+                        style="@style/DingoEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_password"
+                        android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/appAlphaBlack">
+
+                    <EditText
+                        android:id="@+id/phoneEditText"
+                        style="@style/DingoEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_phone"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:background="@drawable/bg_blue_button"
+                   android:layout_marginTop="15dp"
+                   android:layout_height="@dimen/button_height">
+                   <Button
+                       style="@style/DingoButtonStyle"
+                       android:layout_width="match_parent"
+                       android:layout_height="@dimen/button_height"
+                       android:text="@string/btn_submit" />
+               </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:clickable="true"
+                    android:background="@drawable/ripple_button"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_toLeftOf="@+id/text_login"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_signin_link"
+                        android:textColor="@color/appAlphaBlack"
+                        android:textSize="@dimen/size_checkbox_text" />
+
+                    <TextView
+                        android:id="@+id/text_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:text="@string/btn_login"
+                        android:textColor="@color/appAlphaBlack"
+                        android:textSize="@dimen/size_checkbox_text" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

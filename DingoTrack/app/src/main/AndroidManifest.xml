@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.io.com.dingotrack">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <action android:name="android.location.PROVIDERS_CHANGED" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".ui.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAgCcCVs-Cuq2SjT737OdVUYpv28F46UnE" />
+
+        <activity android:name=".ui.login.LoginActivity" />
+        <activity android:name=".ui.register.SignUpActivity" />
+        <activity android:name=".ui.intro.IntroductionScreen" />
+        <activity android:name=".ui.forgotPassword.ForgotPasswordActivity" />
+        <activity android:name=".ui.profile.ProfileActivity" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity android:name=".ui.shipment.CreateShipmentActivity"/>
+    </application>
+
+</manifest>

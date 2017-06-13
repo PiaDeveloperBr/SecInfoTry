@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "app.io.com.dingotrack"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    jcenter() // If not already there
+}
+
+dependencies {
+    final PLAY_SERVICES_VERSION = '9.6.1'
+    final SUPPORT_LIBRARY_VERSION = '25.3.0'
+    final RETROFIT_VERSION = '2.1.0'
+    final GOOGLEPLAY_VERSION = '10.2.0'
+    final BUTTERKNIFE_VERSION = '8.4.0'
+    final MVP_MOXY_VERSION = '1.4.5'
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //Support & Design Libs
+    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:cardview-v7:$SUPPORT_LIBRARY_VERSION"
+    //Butter Knife
+    compile "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
+    apt "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
+
+
+    //Google play services
+    compile "com.google.android.gms:play-services-maps:$GOOGLEPLAY_VERSION"
+    compile "com.google.android.gms:play-services-location:$GOOGLEPLAY_VERSION"
+    compile 'com.google.maps.android:android-maps-utils:0.4'
+
+    //MVP
+    compile "com.arello-mobile:moxy:$MVP_MOXY_VERSION"
+    compile "com.arello-mobile:moxy-android:$MVP_MOXY_VERSION"
+    compile "com.arello-mobile:moxy-app-compat:$MVP_MOXY_VERSION"
+    annotationProcessor "com.arello-mobile:moxy-compiler:$MVP_MOXY_VERSION"
+    //Rx Permissions
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.0@aar'
+    //Font Change
+   // 0 compile 'uk.co.chrisjenx:calligraphy:2.3.0'
+
+    // Glide image library
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    //For progress bar
+    compile 'com.wang.avi:library:1.0.5'
+
+    testCompile 'junit:junit:4.12'
+}

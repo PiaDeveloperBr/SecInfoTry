@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">DingoTrack</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="abstitle_login">Login</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="text_remember">Remember me?</string>
+    <string name="text_forgot_password">Forgot Password?</string>
+    <string name="btn_login">Log in</string>
+    <string name="text_or">OR</string>
+    <string name="text_signup_link">Dont have an account?</string>
+    <string name="btn_create">Create</string>
+    <string name="abstitle_signup">Sign Up</string>
+    <string name="btn_register">Register</string>
+    <string name="hint_fname">First Name</string>
+    <string name="hint_lname">Last Name</string>
+    <string name="hint_businessname">Business Name</string>
+    <string name="hint_tmc_number">(T) MC Number</string>
+    <string name="hint_tdot_number">(T) DOT Number</string>
+    <string name="hint_tpoc">POC ?</string>
+    <string name="hint_phone">Phone</string>
+    <string name="btn_submit">Submit</string>
+    <string name="text_signin_link">Already have an account?</string>
+    <string name="abstitle_forgotpassword">Request Password</string>
+    <string name="hint_email_enter">Enter Email</string>
+    <string name="abstitle_profile">Profile</string>
+    <string name="dummy_name">Hello! Tom Jerry</string>
+    <string name="dummy_email">tom@gmail.com</string>
+    <string name="dummy_phone">698989898</string>
+    <string name="btn_edit_profile">Edit Profile</string>
+    <string name="text_type">Type :-</string>
+    <string name="dummy_type">Shipper</string>
+    <string name="btn_update_profile">Update Profile</string>
+
+    <!--Sliding menu strings-->
+    <string name="srn_drawer_open">Open</string>
+    <string name="srn_drawer_close">Close</string>
+    <string name="srn_ex_no_menu_view">No view for menu provided. You must either call .withMenuView(View) or pass a valid resource id to .withMenuLayout(int)</string>
+    <string name="srn_ex_bad_content_view">Your content view must contain exactly one child. Make sure you call inject() after setContentView().</string>
+    <string name="abstitle_create_shipments">Create Shipment</string>
+    <string name="btn_ok">Ok</string>
+
+</resources>
